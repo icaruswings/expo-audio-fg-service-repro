@@ -5,6 +5,8 @@ Minimal repro for an Android `RemoteServiceException` crash in `expo-audio`'s
 calling `Service.startForeground()`, which is a foreground-service contract
 violation. Android kills the process about five seconds later.
 
+Filed upstream: https://github.com/expo/expo/issues/46137
+
 See `App.js` for four scenarios that exercise the suspect paths.
 
 ## Run it
